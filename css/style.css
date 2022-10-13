@@ -1,5 +1,6 @@
 /* css */
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -12,12 +13,12 @@ a{
 
 .medsos{
     padding: 5px 0;
-    background-color: aqua;
+    background-color: black;
 }
 
 .medsos ul li{
     display: inline-block;
-    color: black;
+    color: white;
     margin-right: 10px;
 }
 .container{
@@ -47,28 +48,27 @@ header ul li{
 }
 
 header ul li a{
-    padding: 25px 20px;
+    padding: 20px 15px;
     display: inline-block;
 }
 
 header ul li a:hover{
-    background-color: aqua;
+    color: white;
+    background-color: black;
     border-radius: 0px 0px 15px 15px;
 }
 
 .active{
-    background-color: aqua;
+    color: white;
+    background-color: black;
     border-radius: 0px 0px 15px 15px;
 }
 
 .banner{
-    height: 60vh;
+    height: 65vh;
     background-image: url('../img/ke1.jpg');
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .banner:after{
@@ -82,10 +82,8 @@ header ul li a:hover{
 }
 
 .banner h2{
-    color: white;
+    color: black;
     z-index: 1;
-    padding: 20px 25px;
-    border: 3px solid white;
 }
 
 section{
@@ -133,6 +131,18 @@ section{
 .row:after {content: "";}
 
 img{
-    padding-top: 20px;
-    width: 100%;
+    padding-top: 10px;
+    width: 200%;
+    height: 200%;
+    object-fit: fill;
+    object-position: center center;
+}
+
+.img-box{
+    width: 200%;
+    height: 200px;
+}
+
+.p5{
+    padding: 50px;
 }
