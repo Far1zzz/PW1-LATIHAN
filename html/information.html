@@ -10,6 +10,7 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
       </head>
       <body>
         <div class="medsos">
@@ -38,6 +39,7 @@
           </div>
         </div>
     
+        <!-- header -->
         <header>
           <div class="container">
             <h1>
@@ -47,10 +49,72 @@
             </h1>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="history.html">History</a></li>
+              <li><a href="explanation.html">Explanation</a></li>
               <li class="active"><a href="information.html">Information</a></li>
             </ul>
           </div>
         </header>
+
+        <div class="conteiner" >
+          <h5 align = "center">Informasi Mengenai Jenis Pesawat</h3>
+          <table border ="1px" widht = 100%>
+              <thead>
+                <tr align="center">
+                  <td>No</td>
+                  <td>Jenis Pesawat</td>
+                  <td>Jarak Tempuh</td>
+                  <td>Foto Pesawat</td>
+                </tr>
+              </thead>
+
+              <tr>
+                  <td>1</td>
+                  <td>Boeing-737-max</td>
+                  <td>6.110km</td>
+                  <td><img src="/img/Boeing-737 max.jpg" alt=""></td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Boeing-747-400</td>
+                <td>13.450km</td>
+                <td><img src="/img/Boeing-787-400.jpg" alt=""></td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Airbus A320</td>
+                <td>6.700km</td>
+                <td><img src="/img/A320.jpg" alt=""></td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Boeing-777</td>
+                <td>17.372km</td>
+                <td><img src="/img/Boeing-777.jpg" alt=""></td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>Airbus A330</td>
+                <td>13.334km</td>
+                <td><img src="/img/A330.jpg" alt=""></td>
+              </tr>
+          </table>
+        </div>
+
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <small>Copyright &copy; 2022 -Fairiz. All Rights Reserved</small>
+          </div>
+        </footer>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $(".bg-loader").hide();
+          })
+        </script>
 </body>
 </html>

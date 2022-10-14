@@ -26,11 +26,11 @@ a {
   margin-right: 10px;
 }
 .container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
-.container::after {
+.container:after {
   content: "";
   display: block;
   clear: both;
@@ -68,9 +68,12 @@ header ul li a:hover {
 }
 
 .banner {
-  height: 65vh;
+  height: 85vh;
   background-image: url("../img/ke1.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: auto;
 }
@@ -87,12 +90,22 @@ header ul li a:hover {
 }
 
 .banner h2 {
-  color: black;
-  z-index: 1;
+  color: rgb(0, 183, 255);
 }
 
 section {
   padding: 50px 0;
+}
+
+section h3{
+  text-align: center;
+  padding: 30px;
+}
+
+.ket1 {
+  color: #666;
+  word-spacing: 2px;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 599px) {
@@ -185,7 +198,7 @@ section {
   .img {
     padding: 5px;
     max-height: 200px;
-    margin: 12px;
+    /* margin: 12px; */
     width: 100%;
   }
 }
@@ -201,4 +214,62 @@ section {
 
 .p5 {
   padding: 50px;
+}
+
+footer{
+  color: aliceblue;
+  padding: 30px;
+  background-color: #333;
+  text-align: center;
+}
+
+.bg-loader {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-loader .loader{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  animation: muter .5s linear infinite;
+}
+
+@keyframes muter {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  overflow-x: auto;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  align-items: center;
+}
+th{
+  color:black;
+}
+
+h5{
+  font-size: 40px;
 }
